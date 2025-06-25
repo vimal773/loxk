@@ -1,6 +1,6 @@
 <?php
 session_start();
-$admin_password = "123"; // change to your desired admin password
+$admin_password = "lockki123"; // change to your desired admin password
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($_POST["admin_pass"] === $admin_password) {
