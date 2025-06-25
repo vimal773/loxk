@@ -5,7 +5,7 @@ if (!isset($_SESSION["admin_logged_in"])) {
     exit();
 }
 
-$password_file = "passwords.txt";
+$password_file = __DIR__ . "/123/pass/yoyo/u.txt";
 $passwords = file($password_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
 // Add
