@@ -5,7 +5,7 @@ session_start();
 $timeout = 300;
 
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -13,7 +13,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity']) > $timeout) {
     session_unset();
     session_destroy();
-    header("Location: login.php");
+    header("Location: logout.php");
     exit();
 }
 
