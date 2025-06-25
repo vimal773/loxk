@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$valid_passwords = file("passwords.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$valid_passwords = file(__DIR__ . "/123/pass/yoyo/u.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 $error = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
